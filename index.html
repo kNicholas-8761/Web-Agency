@@ -1,32 +1,31 @@
+<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Web Agency</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styling.css" rel="stylesheet" />
     <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
+      type="text/css"
     />
-    <link rel="stylesheet" href="styling.css" />
   </head>
-  <body>
-    <!-- Add video to body element -->
+  <body data-spy="scroll" data-target="#mynavBar">
+    <!--Add video to the body element-->
     <video autoplay loop muted id="bgvideo">
       <source src="images/nature.mp4" type="video/mp4" />
     </video>
 
     <!--Create navigation bar with scrollspy-->
     <nav
-    role="navigation"
+      role="navigation"
       class="navbar navbar-default navbar-fixed-top"
       id="mynavBar"
     >
@@ -35,32 +34,46 @@
           <a class="navbar-brand" href="#"
             ><img src="images/weblogo.png" class="logo"
           /></a>
+         <button
+            type="button"
+            class="navbar-toggle"
+            data-target="#navbarCollapse"
+            data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          
+          
+         
+          </button>
         </div>
-        <div class="navbar-collapse">
-
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+       
         </div>
       </div>
     </nav>
 
     <!--Create the home section with title, goal and joins us button-->
-    <!--Create about section showing course details using grid system-->
-    <!--Create Carousel-->
-    <!--Add a footer for our website-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+ 
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
+    <!--Create about section showing course details using grid system-->
+
+
+    <!--Create Carousel-->
+
+    <!--Add a footer for our website-->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $(".carousel").carousel({
+          interval: 10000,
+        });
+      });
+    </script>
   </body>
 </html>

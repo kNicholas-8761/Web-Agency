@@ -4,3 +4,6 @@ video#bgvideo {
   min-width: 100%;
   z-index: -100;
 }
+.logo{
+  height: 30px;   
+}
