@@ -65,22 +65,22 @@ video#bgvideo {
 -Move the carousel caption under the pictures
 */
 #promise{
-  padding-top: 100px;   
+    padding-top: 100px;   
 }
 #myCarousel{
-  width: 60%;
-  margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
 }
 .carousel-inner .item img{
-  height: 400px; 
-  margin: 0 auto;
+    height: 400px; 
+    margin: 0 auto;
 }
 
 .carousel-caption{
-  position: relative;
-  left: auto;
-  right: auto;
-  height: 200px;
+    position: relative;
+    left: auto;
+    right: auto;
+    height: 200px;
 }
 
 /*Style the navigation bar using a navbar css generator*/
